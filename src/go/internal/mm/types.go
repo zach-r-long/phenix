@@ -211,9 +211,10 @@ type VM struct {
 	Taps        []string  `json:"taps"`
 	Captures    []Capture `json:"captures"`
 	Running     bool      `json:"running"`
-	Redeploying bool      `json:"redeploying"`
+	Busy		bool      `json:"busy"`
 	Uptime      float64   `json:"uptime"`
 	Screenshot  string    `json:"screenshot,omitempty"`
+	State  		string    `json:"state"`
 
 	// Used internally to track network <--> IP relationship, since
 	// network ordering from minimega may not be the same as network
