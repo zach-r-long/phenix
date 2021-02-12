@@ -17,24 +17,15 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-//multiaction
-library.add( faBolt )
-library.add( faFileDownload )
-//main
 library.add(fas)
 
 Vue.component( 'font-awesome-icon', FontAwesomeIcon )
 
 Vue.config.productionTip = false
 
-//head
 Vue.use( Buefy, {
 	defaultIconPack: 'fa'
 
-//Vue.use(Buefy, {
-//	defaultIconComponent:'font-awesome-icon',
-//	defaultIconPack: 'fas'
-//Multi Action Patch
 })
 
 Vue.use( VueResource )

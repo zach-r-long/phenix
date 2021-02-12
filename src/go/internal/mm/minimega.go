@@ -130,7 +130,7 @@ func (this Minimega) GetVMInfo(opts ...Option) VMs {
 		vm.Name = row["name"]
 
 		vm.Running = row["state"] == "RUNNING"
-		vm.State = row["state"]
+		//vm.State = row["state"]
 
 		s := row["vlan"]
 		s = strings.TrimPrefix(s, "[")

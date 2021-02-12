@@ -616,14 +616,16 @@
         return true;
       },
 
-      validate () {
+      /*validate () {
         var regexp = /^[ a-zA-Z0-9-_ ]*$/;
     
         if ( !regexp.test( this.diskImageModal.name ) ) {
           this.diskImageModal.nameErrType = 'is-danger';
           this.diskImageModal.nameErrMsg  = 'image names can only contain alphanumeric, dash, and underscore; we will add the file extension';
           return false;
-      
+     	}
+      },*/ 
+ 
       isMultiVmSelected ()  {        
         if (this.vmSelectedArray == undefined || this.vmSelectedArray.length ==0) {
           return  false;        
